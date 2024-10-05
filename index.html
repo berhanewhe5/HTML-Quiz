@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src = "script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <title>Quiz Game</title>
+</head>
+
+<body onload="setQuestion(question1);">
+    <h1>Quiz Game</h1>
+    <div id="scoreText">Score: 0/0</div>
+    <h3 id="question">Question: Who is the president of Namibia?</h3>
+    <div class="answersContainer">
+        <div class="answer hoverable" id = "answer1" onclick="selectAnswer(this,'A')">Answer 1</div>
+        <div class="answer hoverable" id = "answer2" onclick="selectAnswer(this,'B')">Answer 2</div>
+        <div class="answer hoverable" id = "answer3" onclick="selectAnswer(this,'C')">Answer 3</div>
+        <div class="answer hoverable" id = "answer4" onclick="selectAnswer(this,'D')">Answer 4</div>
+    </div>
+    <div class="container"><button id="submitButton" onclick="submitAnswer()">Submit</button></div>
+    <footer>© Konita Games 2023 Created by Berhane Wheeler</footer>
+</body>
